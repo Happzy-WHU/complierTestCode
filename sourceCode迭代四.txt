@@ -123,7 +123,7 @@ int testOpa(){
 	a = iArr0[0]*a;
 	a = iArr0[0]*fun0();
 	a = iArr0[0]*iArr0[0];
-	a = iArr0[0]/2;
+	a = iArr0[0]/1;
 	a = iArr0[0]/a;
 	a = iArr0[0]/fun0();
 	a = iArr0[0]/iArr0[0];
@@ -388,15 +388,12 @@ int testOpa(){
 
 int testStam(){
 	while (a){
-		a = 5;
-		a++;
-	}
-	while (2){
-		a = 5;
+		a = 1;
 		a--;
 	}
 	while (a>0){
-		a = 5;
+		a = 1;
+		a--;
 	}
 	
 	if (a) {
@@ -438,10 +435,10 @@ int testWR(){
 }
 
 int main(){
-	//testArrInit();
-	//testWR();
-	//testStam();
-	//testOpa();
+	testArrInit();
+	testStam();
+	testOpa();
+	testWR();
 	return 0;
 }
 $
