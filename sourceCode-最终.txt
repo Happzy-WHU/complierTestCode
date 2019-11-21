@@ -1,0 +1,444 @@
+int a = 1;
+real b = 1.1;
+int iArr0[5] = {1,2,3,0,0};
+real rArr0[5] = {1,2,3,0,0};
+int fun0()
+{
+	a = 10;
+	b = 15.0;
+	return 1;
+}
+real fun1()
+{
+	a = 10;
+	b = 15.0;
+	return 1;
+}
+
+//测试数组的初始化
+int testArrInit(){
+	int iArr1[5] = {1,2,3};
+	int iArr2[] = {1,2,3};
+	int iArr3[] = {a,2,3};
+	int iArr4[] = {a,a,a};
+	real rArr1[5] = {1,2,3};
+	real rArr2[] = {1,2,3};
+	real rArr3[5] = {1.1,2,3,0,0};
+	real rArr4[5] = {1.1,2,3};
+	real rArr5[] = {1.1,2,3};
+	real rArr6[5] = {1.1,2.1,3.1,0.0,0.0};
+	real rArr7[5] = {1.1,2.1,3.1};
+	real rArr8[] = {1.1,2.1,3.1};
+	real rArr9[] = {b,2.1,3.1};
+	real rArr10[] = {a,2.1,3.1};
+	real rArr11[] = {a,a,a};
+	real rArr12[] = {a,b,b};
+	real rArr13[] = {b,b,b};
+	return 0;
+}
+
+//测试赋值语句、运算符、函数调用、全局变量的使用
+int testOpa(){
+	iArr0[0] = 1;
+	iArr0[0] = a;
+	iArr0[0] = fun0();
+	iArr0[0] = iArr0[0];
+	rArr0[0] = 1;
+	rArr0[0] = 1.1;
+	rArr0[0] = a;
+	rArr0[0] = b;
+	rArr0[0] = fun1();
+	rArr0[0] = iArr0[0];
+	rArr0[0] = rArr0[0];
+	a = 1;
+	a = a;
+	a = iArr0[0];
+	a = fun0();
+	b = 1;
+	b = 1.1;
+	b = a;
+	b = b;
+	b = iArr0[0];
+	b = rArr0[0];
+	b = fun0();
+	b = fun1();
+	//测试运算符
+	a = 2+2;
+	a = 2+a;
+	a = 2+fun0();
+	a = 2+iArr0[0];
+	a = 2-2;
+	a = 2-a;
+	a = 2-fun0();
+	a = 2-iArr0[0];
+	a = 2*2;
+	a = 2*a;
+	a = 2*fun0();
+	a = 2*iArr0[0];
+	a = 2/2;
+	a = 2/a;
+	a = 2/fun0();
+	a = 2/iArr0[0];
+	a = a+2;
+	a = a+a;
+	a = a+fun0();
+	a = a+iArr0[0];
+	a = a-2;
+	a = a-a;
+	a = a-fun0();
+	a = a-iArr0[0];
+	a = a*2;
+	a = a*a;
+	a = a*fun0();
+	a = a*iArr0[0];
+	a = a/2;
+	a = a/a;
+	a = a/fun0();
+	a = a/iArr0[0];
+	a = fun0()+2;
+	a = fun0()+a;
+	a = fun0()+fun0();
+	a = fun0()+iArr0[0];
+	a = fun0()-2;
+	a = fun0()-a;
+	a = fun0()-fun0();
+	a = fun0()-iArr0[0];
+	a = fun0()*2;
+	a = fun0()*a;
+	a = fun0()*fun0();
+	a = fun0()*iArr0[0];
+	a = fun0()/2;
+	a = fun0()/a;
+	a = fun0()/fun0();
+	a = fun0()/iArr0[0];
+	a = iArr0[0]+2;
+	a = iArr0[0]+a;
+	a = iArr0[0]+fun0();
+	a = iArr0[0]+iArr0[0];
+	a = iArr0[0]-2;
+	a = iArr0[0]-a;
+	a = iArr0[0]-fun0();
+	a = iArr0[0]-iArr0[0];
+	a = iArr0[0]*2;
+	a = iArr0[0]*a;
+	a = iArr0[0]*fun0();
+	a = iArr0[0]*iArr0[0];
+	a = iArr0[0]/1;
+	a = iArr0[0]/a;
+	a = iArr0[0]/fun0();
+	a = iArr0[0]/iArr0[0];
+	b = 2+2;
+	b = 2+1.1;
+	b = 2+a;
+	b = 2+b;
+	b = 2+fun0();
+	b = 2+fun1();
+	b = 2+iArr0[0];
+	b = 2+rArr0[0];
+	b = 2-2;
+	b = 2-1.1;
+	b = 2-a;
+	b = 2-b;
+	b = 2-fun0();
+	b = 2-fun1();
+	b = 2-iArr0[0];
+	b = 2-rArr0[0];
+	b = 2*2;
+	b = 2*1.1;
+	b = 2*a;
+	b = 2*b;
+	b = 2*fun0();
+	b = 2*fun1();
+	b = 2*iArr0[0];
+	b = 2*rArr0[0];
+	b = 2/2;
+	b = 2/1.1;
+	b = 2/a;
+	b = 2/b;
+	b = 2/fun0();
+	b = 2/fun1();
+	b = 2/iArr0[0];
+	b = 2/rArr0[0];
+	b = 1.1+2;
+	b = 1.1+1.1;
+	b = 1.1+a;
+	b = 1.1+b;
+	b = 1.1+fun0();
+	b = 1.1+fun1();
+	b = 1.1+iArr0[0];
+	b = 1.1+rArr0[0];
+	b = 1.1-2;
+	b = 1.1-1.1;
+	b = 1.1-a;
+	b = 1.1-b;
+	b = 1.1-fun0();
+	b = 1.1-fun1();
+	b = 1.1-iArr0[0];
+	b = 1.1-rArr0[0];
+	b = 1.1*2;
+	b = 1.1*1.1;
+	b = 1.1*a;
+	b = 1.1*b;
+	b = 1.1*fun0();
+	b = 1.1*fun1();
+	b = 1.1*iArr0[0];
+	b = 1.1*rArr0[0];
+	b = 1.1/2;
+	b = 1.1/1.1;
+	b = 1.1/a;
+	b = 1.1/b;
+	b = 1.1/fun0();
+	b = 1.1/fun1();
+	b = 1.1/iArr0[0];
+	b = 1.1/rArr0[0];
+	b = a+2;
+	b = a+1.1;
+	b = a+a;
+	b = a+b;
+	b = a+fun0();
+	b = a+fun1();
+	b = a+iArr0[0];
+	b = a+rArr0[0];
+	b = a-2;
+	b = a-1.1;
+	b = a-a;
+	b = a-b;
+	b = a-fun0();
+	b = a-fun1();
+	b = a-iArr0[0];
+	b = a-rArr0[0];
+	b = a*2;
+	b = a*1.1;
+	b = a*a;
+	b = a*b;
+	b = a*fun0();
+	b = a*fun1();
+	b = a*iArr0[0];
+	b = a*rArr0[0];
+	b = a/2;
+	b = a/1.1;
+	b = a/a;
+	b = a/b;
+	b = a/fun0();
+	b = a/fun1();
+	b = a/iArr0[0];
+	b = a/rArr0[0];
+	b = b+2;
+	b = b+1.1;
+	b = b+a;
+	b = b+b;
+	b = b+fun0();
+	b = b+fun1();
+	b = b+iArr0[0];
+	b = b+rArr0[0];
+	b = b-2;
+	b = b-1.1;
+	b = b-a;
+	b = b-b;
+	b = b-fun0();
+	b = b-fun1();
+	b = b-iArr0[0];
+	b = b-rArr0[0];
+	b = b*2;
+	b = b*1.1;
+	b = b*a;
+	b = b*b;
+	b = b*fun0();
+	b = b*fun1();
+	b = b*iArr0[0];
+	b = b*rArr0[0];
+	b = b/2;
+	b = b/1.1;
+	b = b/a;
+	b = b/b;
+	b = b/fun0();
+	b = b/fun1();
+	b = b/iArr0[0];
+	b = b/rArr0[0];
+	b = fun0()+2;
+	b = fun0()+1.1;
+	b = fun0()+a;
+	b = fun0()+b;
+	b = fun0()+fun0();
+	b = fun0()+fun1();
+	b = fun0()+iArr0[0];
+	b = fun0()+rArr0[0];
+	b = fun0()-2;
+	b = fun0()-1.1;
+	b = fun0()-a;
+	b = fun0()-b;
+	b = fun0()-fun0();
+	b = fun0()-fun1();
+	b = fun0()-iArr0[0];
+	b = fun0()-rArr0[0];
+	b = fun0()*2;
+	b = fun0()*1.1;
+	b = fun0()*a;
+	b = fun0()*b;
+	b = fun0()*fun0();
+	b = fun0()*fun1();
+	b = fun0()*iArr0[0];
+	b = fun0()*rArr0[0];
+	b = fun0()/2;
+	b = fun0()/1.1;
+	b = fun0()/a;
+	b = fun0()/b;
+	b = fun0()/fun0();
+	b = fun0()/fun1();
+	b = fun0()/iArr0[0];
+	b = fun0()/rArr0[0];
+	b = fun1()+2;
+	b = fun1()+1.1;
+	b = fun1()+a;
+	b = fun1()+b;
+	b = fun1()+fun0();
+	b = fun1()+fun1();
+	b = fun1()+iArr0[0];
+	b = fun1()+rArr0[0];
+	b = fun1()-2;
+	b = fun1()-1.1;
+	b = fun1()-a;
+	b = fun1()-b;
+	b = fun1()-fun0();
+	b = fun1()-fun1();
+	b = fun1()-iArr0[0];
+	b = fun1()-rArr0[0];
+	b = fun1()*2;
+	b = fun1()*1.1;
+	b = fun1()*a;
+	b = fun1()*b;
+	b = fun1()*fun0();
+	b = fun1()*fun1();
+	b = fun1()*iArr0[0];
+	b = fun1()*rArr0[0];
+	b = fun1()/2;
+	b = fun1()/1.1;
+	b = fun1()/a;
+	b = fun1()/b;
+	b = fun1()/fun0();
+	b = fun1()/fun1();
+	b = fun1()/iArr0[0];
+	b = fun1()/rArr0[0];
+	b = iArr0[0]+2;
+	b = iArr0[0]+1.1;
+	b = iArr0[0]+a;
+	b = iArr0[0]+b;
+	b = iArr0[0]+fun0();
+	b = iArr0[0]+fun1();
+	b = iArr0[0]+iArr0[0];
+	b = iArr0[0]+rArr0[0];
+	b = iArr0[0]-2;
+	b = iArr0[0]-1.1;
+	b = iArr0[0]-a;
+	b = iArr0[0]-b;
+	b = iArr0[0]-fun0();
+	b = iArr0[0]-fun1();
+	b = iArr0[0]-iArr0[0];
+	b = iArr0[0]-rArr0[0];
+	b = iArr0[0]*2;
+	b = iArr0[0]*1.1;
+	b = iArr0[0]*a;
+	b = iArr0[0]*b;
+	b = iArr0[0]*fun0();
+	b = iArr0[0]*fun1();
+	b = iArr0[0]*iArr0[0];
+	b = iArr0[0]*rArr0[0];
+	b = iArr0[0]/2;
+	b = iArr0[0]/1.1;
+	b = iArr0[0]/a;
+	b = iArr0[0]/b;
+	b = iArr0[0]/fun0();
+	b = iArr0[0]/fun1();
+	b = iArr0[0]/iArr0[0];
+	b = iArr0[0]/rArr0[0];
+	b = rArr0[0]+2;
+	b = rArr0[0]+1.1;
+	b = rArr0[0]+a;
+	b = rArr0[0]+b;
+	b = rArr0[0]+fun0();
+	b = rArr0[0]+fun1();
+	b = rArr0[0]+iArr0[0];
+	b = rArr0[0]+rArr0[0];
+	b = rArr0[0]-2;
+	b = rArr0[0]-1.1;
+	b = rArr0[0]-a;
+	b = rArr0[0]-b;
+	b = rArr0[0]-fun0();
+	b = rArr0[0]-fun1();
+	b = rArr0[0]-iArr0[0];
+	b = rArr0[0]-rArr0[0];
+	b = rArr0[0]*2;
+	b = rArr0[0]*1.1;
+	b = rArr0[0]*a;
+	b = rArr0[0]*b;
+	b = rArr0[0]*fun0();
+	b = rArr0[0]*fun1();
+	b = rArr0[0]*iArr0[0];
+	b = rArr0[0]*rArr0[0];
+	b = rArr0[0]/2;
+	b = rArr0[0]/1.1;
+	b = rArr0[0]/a;
+	b = rArr0[0]/b;
+	b = rArr0[0]/fun0();
+	b = rArr0[0]/fun1();
+	b = rArr0[0]/iArr0[0];
+	b = rArr0[0]/rArr0[0];
+	return 0;
+}
+
+int testStam(){
+	while (a){
+		a = 1;
+		a--;
+	}
+	while (a>0){
+		a = 1;
+		a--;
+	}
+	
+	if (a) {
+		a = 4;
+	}
+	else {
+		a = 5;
+	}
+	if (2) {
+		a = 4;
+	}
+	else {
+		a = 5;
+	}
+	
+	if (a>0) {
+		a = 4;
+	}
+	else {
+		a = 5;
+	}
+	return 0;
+}
+
+
+int testWR(){
+	//int iArr0[5] = {1,2,3,0,0};
+	//real rArr0[5] = {1,2,3,0,0};
+	write(1);
+	write(1.1);
+	write(a);
+	write(b);
+	write(fun0());
+	write(fun1());
+	write(iArr0[0]);
+	write(rArr0[0]);
+	read(b);
+	return 0;
+}
+
+int main(){
+	testArrInit();
+	testStam();
+	testOpa();
+	testWR();
+	return 0;
+}
+$
